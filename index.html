@@ -3,31 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
+<!-- 
+  Trae Feel free to remove these styles or customise in your own stylesheet 👍 
+-->
 <body>
+ <main>
+  <header>
+    <div class="equi-container"><img class="equi" src="images/image-equilibrium.jpg" alt="image-equilibrium"></div>
 
-  Equilibrium #3429
+    <h1>Equilibrium #3429</h1>
 
-  Our Equilibrium collection promotes balance and calm.
+    <div class="calm">Our Equilibrium collection promotes balance and calm.</div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <div class="datamain">
+      <div class="dataleft">
+        <span class="ether-container"><img class="ether" src="images/icon-ethereum.svg" alt="icon ether"/></span>
+        <span class="threezeros">0.041 ETH</span> 
+      </div>
+      <div class="dataright">
+        <span><img class="clock" src="images/icon-clock.svg" alt="icon clock"/></span>
+        <span class="daysleft">3 days left</span>
+      </div>
+    </div>
 
-  <div class="attribution">
+    <hr class="line"/>
+
+    <section class="jules">
+      <img class="avatar" src="images/image-avatar.png" alt="image avatar"/>
+      <span class="creation">Creation of</span><span class="wy">Jules Wyvern</span>
+    </section>
+
+  </header>
+
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/traez">Trae Zeeofor</a>.
+  </footer>
+
+ </main>
 </body>
 </html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+
+/*
+Imported styles at top, then declared variables at root.
+Next declared selectors as much as possible in sequential order of appearance
+Media query at bottom
+Flex-box row on desktop, while flex-box column on mobile.
+Will get better in documentation, debugging and responsive design. This is but my 2nd frontendmentor project
+Date: 18.07.22
+
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+- Font size (paragraph): 18px
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    
+    font-family:Outfit;
+      }
+
+body{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center; 
+    height:100vh;
+    width:100vw;
+    background-color:var(--very-dark-blue-main-bg);
+    
+}
+main{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center; 
+    align-items: center;
+    align-content:center;
+    width: 20%;
+    height:auto;
+    margin: auto;
+      }
+
+header{
+    background-color:var(--very-dark-blue-card-bg);
+    border-radius:1vw;
+}
+
+.datamain{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding-bottom:1vw;
+}
+
+.dataleft{
+    padding-left:1vw;
+}
+
+.dataright{
+    padding-right:1vw;
+}
+
+.threezeros{
+    padding-left:0.1vw;
+    color:var(--cyan);
+    font-size:0.9vw;
+}
+
+.daysleft{
+    padding-left:0.1vw;
+    color:var(--soft-blue);
+    font-size:0.9vw;
+}
+
+.creation{
+    padding-left:1vw;
+    color:var(--soft-blue);
+}
+
+.wy{
+    color:var(--white);
+    padding-left:0.2vw;
+}
+
+.line{
+     margin-left:1vw;
+    margin-right:1vw;
+    height:0.01vw;
+    color:var(--soft-blue);
+}
+
+.jules{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top:0.5vw;
+    padding-left:1vw;
+    padding-bottom:1.5vw;
+    font-size:0.9vw;
+}
+
+footer{
+    width: 100%;
+    height:auto;
+    padding-top:0.5vw;
+}
+
+.equi{
+    width:90%;
+    height:auto;
+    border-radius:1vw;
+ }
+    
+.equi-container{
+    /* Centering image in container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items :center;
+    padding-top:1vw; 
+}  
+
+.calm{
+    padding-bottom:1vw;
+    padding-left:1vw;
+    color:var(--soft-blue);
+}
+
+.ether{
+    width:11%;
+    height:auto;
+}
+
+.clock{
+    width:15%;
+    height:auto;
+}
+
+.avatar{
+    width:8%;
+    height:auto;
+}
+
+h1{
+    font-size:1.2vw;
+    padding-top:0.5vw;
+    padding-left:1vw;
+    color:var(--white);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
