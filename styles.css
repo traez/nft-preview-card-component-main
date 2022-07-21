@@ -1,20 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
 
 /*
-Imported styles at top, then declared variables at root.
-Next declared selectors as much as possible in sequential order of appearance
-Media query at bottom
-Flex-box row on desktop, while flex-box column on mobile.
-Will get better in documentation, debugging and responsive design. This is but my 2nd frontendmentor project
-Date: 18.07.22
+Did well with relative units ...responsiveness with this one.
+But failed terribly when it comes to mobile view (too tired to start styling all over again for mobile),
+Also failed to apply image overlay on hover.
+Will study and research more to correct on next project.
 
-The designs were created to the following widths:
-- Mobile: 375px
-- Desktop: 1440px
-
-- Font size (paragraph): 18px
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600
+HTML is fine. Problem are CSS related.
 */
 
 :root {
@@ -121,6 +113,21 @@ footer{
     height:auto;
     border-radius:1vw;
  }
+
+ .equi:hover {
+    filter: brightness(2.5);
+    cursor: pointer;
+}
+
+h1:hover {
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+.wy:hover {
+    color:var(--cyan);
+    cursor: pointer;
+}
     
 .equi-container{
     /* Centering image in container */
@@ -135,6 +142,7 @@ footer{
     padding-bottom:1vw;
     padding-left:1vw;
     color:var(--soft-blue);
+    font-size:0.9vw;
 }
 
 .ether{
@@ -159,10 +167,21 @@ h1{
     color:var(--white);
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size:0.7vw; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
+@media (max-width: 800px) {
+    main {    
+        display:flex;
+        flex-flow:column wrap;
+        justify-content: center; 
+        align-items: center;
+        align-content:center;
+        width: 80%;
+        height:auto;
+        margin: auto;
+    }
+}
 
 
 
